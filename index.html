@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="module" src="employee.js"></script>
+    <script src="calenderscript.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>header</header>
+        <main>
+            <section>
+                <div id="scheule_box">
+                    <div id="calender">
+                        <div id="calender-header">
+                            <p class="current-date"></p>
+                            <div class="icons">
+                                <span id="prev" class="material-symbols-outlined">chevron_left</span>                         
+                                <span id="next" class="material-symbols-outlined">chevron_right</span>
+                            </div>
+                        </div>
+                        <div class="calendar-body">
+                            <ul class="weeks">
+                                <li>일</li>
+                                <li>월</li>
+                                <li>화</li>
+                                <li>수</li>
+                                <li>목</li>
+                                <li>금</li>
+                                <li>토</li>
+                            </ul>
+                            <ul class="days"></ul>
+                        </div>
+                    </div>
+                    <div id="schedule_date_box">
+                        <h1 id="Day">13일</h1>
+                        <h2 id="weekDay">(월요일)</h2>
+                        <div id="schedule_buttons">
+                            <input type="button" id="employee_btn" value="근무자"> <br>
+                            <input type="button" id="schedule_btn" value="일정">
+                        </div>
+                    </div>
+                    <div id="schedule">
+                        <h1 id="schedule_text">일정</h1>
+                        <ul class="schedule_list">
+                        </ul>
+                    </div>
+                </div>      
+            </section>
+        </main>
+        <aside>
+            <div id="notice_board">
+                <h1 id="board_text">공지사항</h1>
+                <ul class="board_items">
+                    <li onclick="navigateToNoticeBoard('notice1')">공지사항 1</li>
+                    <li onclick="navigateToNoticeBoard('notice2')">공지사항 2</li>
+                    <li onclick="navigateToNoticeBoard('notice3')">공지사항 3</li>
+                    <li onclick="navigateToNoticeBoard('notice4')">공지사항 4</li>
+                    <li onclick="navigateToNoticeBoard('notice5')">공지사항 5</li>
+                    <li onclick="navigateToNoticeBoard('notice6')">공지사항 6</li>
+                    <li onclick="navigateToNoticeBoard('notice7')">공지사항 7</li>
+                    <li onclick="navigateToNoticeBoard('notice8')">공지사항 8</li>
+                    <li onclick="navigateToNoticeBoard('notice9')">공지사항 9</li>
+                    <li onclick="navigateToNoticeBoard('notice10')">공지사항 10</li>
+                </ul>
+            </div>
+        </aside>
+        <footer>footer</footer>
+    </div>  
+</body>
+</html>

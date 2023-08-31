@@ -1,0 +1,171 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+header {
+    width: 960px;
+    height: 100px;
+    background: #111;
+}
+
+main {
+    width: 650px;
+    height: 900px;
+    background: #333;
+    float: left;
+}
+
+aside{
+    width: 310px;
+    height: 900px;
+    background: #444;
+    float: left;
+}
+
+footer {
+    width: 960px;
+    height: 100px;
+    background: #222;
+    float: left;
+}
+
+#calender{
+    width: 400px;
+    height: 470px;
+    background-color: #f2f2f2;
+    border-radius: 10px 0 0 0;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 0;
+    float: left;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+#calender-header {
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+    padding: 0 10px 0;
+}
+
+.current-date{
+    margin-left: 20px;
+    font-size: 1.45rem;
+    font-weight: 500; 
+    margin-right: 90px;
+}
+.icons span{
+    height: 38px;
+    width: 38px;
+    color: #878787;
+    font-size: 1.9rem;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    
+}
+
+.icons span:hover{
+    background: #f2f2f2;
+}
+.icons span:last-child{
+    margin-right: -10px;
+}
+
+.calendar-body{
+    padding: 20px;
+}
+.calendar-body ul{
+    width: 300px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.days{
+    margin-bottom: 20px;
+}
+.weeks li{
+    font-weight: 500;
+}
+
+.calendar-body ul li {
+    position: relative;
+    width: calc(100% /7);
+}
+.days li{ 
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.days li.inactive{
+    color: #aaa;
+}
+.days li.active{
+    color: #fff;
+}
+.days li::before{
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    z-index: -1;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.days li:hover::before{
+    background: #f2f2f2;
+}
+.days li.active::before{
+    background: #9B59B6;
+}
+
+#schedule_date_box {
+    width: 160px;
+    background-color: #f2f2f2;
+    border-radius: 0 10px 0 0;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    float: left;
+    margin-top: 30px;
+    height: 450px;
+}
+
+#schedule{
+    width: 580px;
+    height: 250px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.2);
+    background-color: #f2f2f2;
+    float: left;
+    margin-left: 30px;
+    
+}
+#schedule_text{
+    margin-left: 20px;
+}
+
+#schedule_buttons input[type="button"] {
+    margin: 10px 0; /* Add margin to increase the vertical spacing between buttons */
+}
+
+#board_text{
+    text-align: center;
+}
+
+.board_items li{
+    width: auto;
+    cursor: pointer;
+}
